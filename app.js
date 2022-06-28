@@ -1,5 +1,17 @@
 'use strict'
 
+function ageCheck(){
+    let age = prompt ('First off, are you over 21? (y/n)');
+    let image = '';
+    if(age !== 'y'){
+        image = '<img id="hero" src="https://ih1.redbubble.net/image.2455904000.4261/st,small,507x507-pad,600x600,f8f8f8.jpg">'
+    }    
+    else {
+        image = '<img id="hero" alt="The Bartop" src="https://images.squarespace-cdn.com/content/v1/5c03fb5829711416c65642a7/1557493696080-IHRP8O6HXQFCLUS7KLW6/bender.png">'
+    }
+    return document.write(image);
+}
+
 function generateGreeting(){
     let firstName = getFirstName(); 
     let message = timeOfDay(); 
@@ -26,19 +38,19 @@ function timeOfDay(){
     return message;
 }
 
-function getBeerPicture1(){
-    let answer = prompt ('Pick 1, 2, or 3');
-    let image = '';
-    if(answer == 1){
-        image = '<img class="tap1" src="https://touringplans.com/blog/wp-content/uploads/2014/12/duff1_glover.jpg">'
-    } else if(answer == 2) {
-        image = '<img class="tap2" src="https://blenderartists.org/uploads/default/original/4X/b/c/b/bcb196bd2a33ca06be49d22803674afb702242c7.jpg">'
-    }
-      else if(answer == 3) {
-        image = '<img class="tap3" src="https://cdn.shopify.com/s/files/1/0030/6633/1203/products/AlamoBeer.Poster_360x.jpg?v=1575655170">'
-      }
-      else {
-        image = '<img id="hero" alt="The Bartop" src="https://images.squarespace-cdn.com/content/v1/5c03fb5829711416c65642a7/1557493696080-IHRP8O6HXQFCLUS7KLW6/bender.png">'
-    }
-    return document.write(image);
-}
+// function getBeerPicture1(){
+//     let answer = prompt ('Pick 1, 2, or 3');
+//     let image = '';
+//     if(answer == 1){
+//         image = '<img class="tap1" src="https://touringplans.com/blog/wp-content/uploads/2014/12/duff1_glover.jpg">'
+//     } else if(answer == 2) {
+//         image = '<img class="tap2" src="https://blenderartists.org/uploads/default/original/4X/b/c/b/bcb196bd2a33ca06be49d22803674afb702242c7.jpg">'
+//     }
+//       else if(answer == 3) {
+//         image = '<img class="tap3" src="https://cdn.shopify.com/s/files/1/0030/6633/1203/products/AlamoBeer.Poster_360x.jpg?v=1575655170">'
+//       }
+//       else {
+//         image = '<img id="hero" alt="The Bartop" src="https://images.squarespace-cdn.com/content/v1/5c03fb5829711416c65642a7/1557493696080-IHRP8O6HXQFCLUS7KLW6/bender.png">'
+//     }
+//     return document.write(image);
+// }
