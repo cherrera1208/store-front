@@ -69,32 +69,32 @@ section{
     margin: 8px auto;
 }
 
-#tap1{
+.tap1{
     border: 3px solid #CC7722;
     border-radius: 18px;
 }
 
-#tap1:hover{
+.tap1:hover{
     border: 4px solid white;
     border-radius: 18px;
 }
 
-#tap2{
+.tap2{
     border: 3px solid #CC7722;
     border-radius: 18px;
 }
 
-#tap2:hover{
+.tap2:hover{
     border: 4px solid white;
     border-radius: 18px;
 }
 
-#tap3{
+.tap3{
     border: 3px solid #CC7722;
     border-radius: 18px;
 }
 
-#tap3:hover{
+.tap3:hover{
     border: 4px solid white;
     border-radius: 18px;
 }
